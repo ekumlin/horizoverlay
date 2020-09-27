@@ -36,14 +36,16 @@ If you can't see the Settings window, just alt tab until you do.
 Congratulations, you have it installed and setup.
 
 ## Install locally
-1. Install Yarn https://yarnpkg.com/en/
-2. Download the project
-3. Install serve yarn global add serve
-4. Go to the terminal (cmd.exe) and to the project's folder
-5. Once inside the project's folder, type yarn, wait for it to finish, then yarn build
-6. Still inside the project's folder, type serve docs.
+1. Install Yarn (https://yarnpkg.com/en/).
+2. Download or clone the project.
+3. In `package.json`, update `homepage` to `http://localhost:5000`.
+    - This prevents an issue with relative paths used by ACT.
+    - This change should not be committed back to the repository.
+4. Open the terminal (`cmd.exe` or Git Bash) and navigate to the project's folder.
+5. Once inside the project's folder, type `yarn`, wait for it to finish, then `yarn build`.
+6. Still inside the project's folder, type `yarn now-start`.
 7. Leave the terminal open!
-8. Then inside ACT, the url would be http://localhost:5000
+8. Then inside ACT, set the URL to `http://localhost:5000` (and reload the overlay).
 
 ## Screenshots
 Color by Role and [@bmwang](https://github.com/bmwang)'s
